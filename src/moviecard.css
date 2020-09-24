@@ -1,0 +1,53 @@
+.movieCard {
+  color: white;
+  height: 330px;
+  width: 450px;
+  padding: 22px;
+  transition: 0.1s all ease-in;
+  min-height: fit-content;
+
+  /* min-width: fit-content; */
+}
+.movieCard:hover {
+  transform: scale(1.09);
+}
+
+.movieCard > img {
+  height: 300px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.movieCard > h2 {
+  padding-top: 10px;
+}
+
+.movieCard__stats {
+  color: lightgray;
+  display: none;
+}
+
+.movieCard__description {
+  width: 100%;
+}
+
+.movieCard:hover > .movieCard__description > .movieCard__stats {
+  width: 95%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.movieCard:hover:hover > .movieCard__description {
+  background: rgba(19, 18, 18, 0.9);
+}
+
+.movieCard__statsLike {
+  display: flex;
+  align-items: center;
+}
+
+.movieCard__statsLike > .MuiSvgIcon-root {
+  margin-right: 2px;
+}
